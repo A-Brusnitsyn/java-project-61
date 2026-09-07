@@ -38,4 +38,5 @@ cd java-project-61
 [Хекслет](https://ru.hexlet.io/) — школа программирования: авторские программы обучения с практикой, поддержкой наставников и реальными проектами, которые остаются в резюме. Этот репозиторий — один из таких проектов.
 
 Аскинема:
-https://asciinema.org/a/AF4rUQI3v9dfLdFC
+https://asciinema.org/a/AF4rUQI3v9dfLdFC игра "Четнное-нечетное"
+https://asciinema.org/a/XI7VzSlApj3shGeg игра "Калькулятор"
