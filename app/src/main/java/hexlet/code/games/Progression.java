@@ -21,7 +21,7 @@ public class Progression {
 
                 arr[j] = String.valueOf(start + j * step);
             }
-            int index = random.nextInt(10) + 1;
+            int index = random.nextInt(10);
             String answer = arr[index];
             arr[index] = "..";
 
