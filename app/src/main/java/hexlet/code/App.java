@@ -27,24 +27,25 @@ public class App {
                     return;
                 case 1:
                     greetUser(scanner);
-                    break;
+                    return;
                 case 2:
                     Even.evenGame(scanner);
-                    break;
+                    return;
                 case 3:
                     Calc.calcGame(scanner);
-                    break;
+                    return;
                 case 4:
                     GCD.GCDGame(scanner);
-                    break;
+                    return;
                 case 5:
                     Progression.progressionGame(scanner);
-                    break;
+                    return;
                 case 6:
                     Prime.primeGame(scanner);
-                    break;
+                    return;
                 default:
                     System.out.println("Invalid choice");
+                    return;
             }
         }
     }
