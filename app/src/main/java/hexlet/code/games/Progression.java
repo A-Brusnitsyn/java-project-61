@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,7 +24,7 @@ public class Progression {
             String answer = arr[index];
             arr[index] = "..";
 
-            questions[i][0] = Arrays.toString(arr);
+            questions[i][0] = String.join(" ", arr);
             questions[i][1] = String.valueOf(answer);
         }
         Engine.startGame(scanner, "What number is missing in the progression?", questions);
