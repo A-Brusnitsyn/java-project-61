@@ -43,3 +43,4 @@ https://asciinema.org/a/XI7VzSlApj3shGeg игра "Калькулятор"
 https://asciinema.org/a/GQlGT6VVQPcARvyL игра "НОД"
 https://asciinema.org/a/wXDAWcA8bGxkFa2d игра "Прогрессия"
 https://asciinema.org/a/2GBY3v7C4ayj4WZm игра "Простое число"
+
