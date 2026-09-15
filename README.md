@@ -41,3 +41,4 @@ cd java-project-61
 https://asciinema.org/a/AF4rUQI3v9dfLdFC игра "Четнное-нечетное"
 https://asciinema.org/a/XI7VzSlApj3shGeg игра "Калькулятор"
 https://asciinema.org/a/GQlGT6VVQPcARvyL игра "НОД"
+https://asciinema.org/a/wXDAWcA8bGxkFa2d игра "Прогрессия"
