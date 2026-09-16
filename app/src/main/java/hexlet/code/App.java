@@ -29,22 +29,22 @@ public class App {
                     greetUser(scanner);
                     return;
                 case 2:
-                    Even.evenGame(scanner);
+                    Even.evenGame();
                     return;
                 case 3:
-                    Calc.calcGame(scanner);
+                    Calc.calcGame();
                     return;
                 case 4:
-                    GCD.GCDGame(scanner);
+                    GCD.GCDGame();
                     return;
                 case 5:
-                    Progression.progressionGame(scanner);
+                    Progression.progressionGame();
                     return;
                 case 6:
-                    Prime.primeGame(scanner);
+                    Prime.primeGame();
                     return;
                 default:
-                    System.out.println("Invalid choice");
+                    System.out.println("Invalid choice: " + choice);
                     return;
             }
         }

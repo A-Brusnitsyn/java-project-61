@@ -2,31 +2,42 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import java.util.Random;
-import java.util.Scanner;
+
 
 public class Progression {
-    public static void progressionGame(Scanner scanner) {
-        Random random = new Random();
-        String questions[][] = new String[Engine.rounds][2];
+    private static final int COUNT = 10;
+    private static final int MAX_START = 10;
+    private static final int MAX_STEP = 10;
 
-        for (int i = 0; i < Engine.rounds; i++) {
-            int count = 10; // сколько чисел
+    public static void progressionGame() {
 
-            int start = random.nextInt(10) + 1;
-            int step = random.nextInt(10) + 1;
+        String[][] questions = new String[Engine.ROUNDS][2];
 
-            String[] arr = new String[count];
-            for (int j = 0; j < count; j++) {
-
-                arr[j] = String.valueOf(start + j * step);
-            }
-            int index = random.nextInt(10);
-            String answer = arr[index];
-            arr[index] = "..";
-
-            questions[i][0] = String.join(" ", arr);
-            questions[i][1] = String.valueOf(answer);
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            questions[i]=generateProgression();
         }
-        Engine.startGame(scanner, "What number is missing in the progression?", questions);
+        Engine.startGame("What number is missing in the progression?", questions);
+    }
+
+    private static String[] generateProgression(){
+        Random random = new Random();
+
+        int start = random.nextInt(MAX_START) + 1;
+        int step = random.nextInt(MAX_STEP) + 1;
+
+        String[] arr = new String[COUNT];
+
+        for (int i = 0; i < COUNT; i++) {
+            arr[i] = String.valueOf(start + i * step);
+        }
+
+        int index = random.nextInt(COUNT);
+        String answer = arr[index];
+        arr[index] = "..";
+
+        String question = String.join(" ", arr);
+
+        return new String[] {question, answer};
+
     }
 }
